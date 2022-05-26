@@ -1,18 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { BrowserRouter, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import  'bootstrap/dist/js/bootstrap.bundle.js.map'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Addstud from './component/Addstud';
 
 function App() {
   return (
-<>
-<BrowserRouter>
+    <>
+    <BrowserRouter>
     <Routes>
-      <Routes path={"/"} exact element=
+      <Route path="/"  exact element={<Addstud/>}/>
     </Routes>
     
+    </BrowserRouter>
     
-    </BrowserRouter></>
-   
+    
+    
+    </>
+
+  
     
   );
 }
